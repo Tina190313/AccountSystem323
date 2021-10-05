@@ -11,6 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <groupId>za.ac.nwu.ac</groupId>
     <artifactId>AccountSystem</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -18,8 +19,8 @@
 
     <properties>
 
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <modules>
@@ -34,31 +35,6 @@
     </modules>
 
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>4.3.30.RELEASE</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>4.3.30.RELEASE</version>
-            </dependency>
-
-
-        </dependencies>
-    </dependencyManagement>
-
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-        </dependency>
-    </dependencies>
 
 
 
