@@ -1,5 +1,8 @@
-C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\persistence\AccountTransaction.java
-C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\Demo.java
-C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\persistence\AccountUser.java
-C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\service\GeneralResponse.java
-C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\persistence\AccountType.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\AccountTypeDto.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\persistence\AccountTransaction.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\persistence\AccountType.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\persistence\AccountUser.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\service\GeneralResponse.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\AccountUserDto.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\Demo.java
+C:\DO\nwu\AccountSystem\AccountSystemDomain\src\main\java\za\ac\nwu\ac\domain\dto\AccountTransactionDto.java
