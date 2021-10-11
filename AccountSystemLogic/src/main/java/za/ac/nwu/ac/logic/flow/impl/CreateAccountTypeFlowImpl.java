@@ -1,9 +1,10 @@
 package za.ac.nwu.ac.logic.flow.impl;
 
 import org.springframework.stereotype.Component;
-import za.ac.nwu.ac.domain.dto.AccountTypeDto;
 import za.ac.nwu.ac.logic.flow.CreateAccountTypeFlow;
 import za.ac.nwu.ac.translator.AccountTypeTranslator;
+import za.ac.nwu.ac.domain.dto.AccountTypeDto;
+
 
 import javax.transaction.Transactional;
 import java.time.LocalDate;

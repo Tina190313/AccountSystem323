@@ -18,17 +18,28 @@
         <dependency>
             <groupId>za.ac.nwu.ac</groupId>
             <artifactId>AccountSystemDomain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <version>${project.version}</version>
+            <scope>provided</scope>
 
         </dependency>
 
         <dependency>
             <groupId>za.ac.nwu.ac</groupId>
             <artifactId>AccountSystemTranslator</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
 
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

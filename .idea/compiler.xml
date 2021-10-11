@@ -9,12 +9,12 @@
         <module name="AccountSystemDomain" />
         <module name="AccountSystemTranslator" />
         <module name="AccountSystemLogic" />
-        <module name="AccountSystemWeb" />
         <module name="AccountSystemWebSpringBoot" />
         <module name="AccountSystemRepository" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AccountSystemWeb" target="8" />
       <module name="AccountSystemWebSpringboot" target="14" />
     </bytecodeTargetLevel>
   </component>

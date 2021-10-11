@@ -12,11 +12,12 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
-import za.ac.nwu.ac.logic.flow.impl.CreateAccountTypeFlowImpl;
-import za.ac.nwu.ac.logic.flow.impl.FetchAccountTypeFlowImpl;
+import za.ac.nwu.ac.logic.flow.CreateAccountTypeFlow;
+import za.ac.nwu.ac.logic.flow.FetchAccountTypeFlow;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Autowired;
 import za.ac.nwu.ac.domain.dto.AccountTypeDto;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -25,13 +26,13 @@ import java.util.List;
 
 public class AccountTypeController {
 
-    private final FetchAccountTypeFlowImpl fetchAccountTypeFlow;
-    private final CreateAccountTypeFlowImpl createAccountTypeFlow;
+    private final FetchAccountTypeFlow fetchAccountTypeFlow;
+    private final CreateAccountTypeFlow createAccountTypeFlow;
 
 
     @Autowired
-    public AccountTypeController(FetchAccountTypeFlowImpl fetchAccountTypeFlow,/*Qualifier calls component name*/
-                                 @Qualifier("createAccountTypeFlowName") CreateAccountTypeFlowImpl createAccountTypeFlow) {
+    public AccountTypeController(FetchAccountTypeFlow fetchAccountTypeFlow,
+                                 @Qualifier("createAccountTypeFlowName") CreateAccountTypeFlow createAccountTypeFlow) {
         this.fetchAccountTypeFlow = fetchAccountTypeFlow;
         this.createAccountTypeFlow = createAccountTypeFlow;
 
@@ -66,6 +67,24 @@ public class AccountTypeController {
         AccountTypeDto accountTypeResponse = createAccountTypeFlow.create(accountType);
         GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountTypeResponse);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+    @GetMapping("{mnemonic}")
+    @ApiOperation(value = "Fetches the specified AccountType.",notes = "Fetches the AccountType corresponding to the given mnemonic.")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Goal Found"),
+            @ApiResponse(code = 400, message = "Bad Request", response = GeneralResponse.class),
+            @ApiResponse(code = 404, message = "Resource Not Found", response = GeneralResponse.class),
+            @ApiResponse(code = 500, message = "Internal Server Error", response = GeneralResponse.class)
+    })
+    public ResponseEntity<GeneralResponse<AccountTypeDto>> getAccountType(
+            @ApiParam(value = "The mnemonic that uniquely identifies the AccountType.",
+                    example = "MILES",
+                    name = "mnemonic",
+                    required = true)
+            @PathVariable("mnemonic")final String mnemonic){
+        AccountTypeDto accountType = fetchAccountTypeFlow.getAccountTypeByMnemonic(mnemonic);
+        GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountType);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }
 

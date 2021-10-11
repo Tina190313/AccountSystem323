@@ -1,5 +1,14 @@
+za\ac\nwu\ac\logic\flow\impl\CreateUserFlowImpl.class
+za\ac\nwu\ac\logic\flow\UpdateUserFlow.class
+za\ac\nwu\ac\logic\flow\CreateTransactionFlow.class
 za\ac\nwu\ac\logic\flow\FetchAccountTypeFlow.class
 za\ac\nwu\ac\logic\config\LogicConfig.class
+za\ac\nwu\ac\logic\flow\CreateUserFlow.class
+za\ac\nwu\ac\logic\flow\impl\CreateTransactionFlowImpl.class
+za\ac\nwu\ac\logic\flow\FetchUserFlow.class
+za\ac\nwu\ac\logic\flow\impl\FetchTransactionFlowImpl.class
+za\ac\nwu\ac\logic\flow\impl\FetchUserFlowImpl.class
+za\ac\nwu\ac\logic\flow\FetchTransactionFlow.class
 za\ac\nwu\ac\logic\flow\impl\FetchAccountTypeFlowImpl.class
 za\ac\nwu\ac\logic\flow\CreateAccountTypeFlow.class
 za\ac\nwu\ac\logic\flow\impl\CreateAccountTypeFlowImpl.class
